@@ -47,7 +47,7 @@ export default function ListView({
         }}
       />
 
-      <div className="space-y-3">
+      <div className="space-y-6 mt-10">
         {isDisabled ? (
           <>
             <MediaSkeleton />
@@ -61,12 +61,6 @@ export default function ListView({
             <Media
               media={media}
               key={media.id}
-              isOpened={currentlyOpened === media.id}
-              onClick={() =>
-                setCurrentlyOpened(
-                  currentlyOpened === media.id ? null : media.id
-                )
-              }
             />
           ))
         )}

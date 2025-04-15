@@ -21,13 +21,15 @@ export type Media = {
   title: {
     romaji: string;
   };
+  coverImage: {
+    large: string;
+    color: string;
+  };
   episodes: Option<string>;
   chapters: Option<string>;
   bannerImage: Option<string>;
-  coverImage: {
-    medium: string;
-    color: string;
-  };
+  seasonYear: Option<number>;
+  averageScore: Option<number>;
 };
 
 export type MediaList = {

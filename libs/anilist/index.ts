@@ -125,10 +125,12 @@ class AniListClient {
                         romaji
                       }
                       episodes
+                      averageScore
+                      seasonYear
                       chapters
                       bannerImage
                       coverImage {
-                        medium
+                        large
                         color
                       }
                     }
